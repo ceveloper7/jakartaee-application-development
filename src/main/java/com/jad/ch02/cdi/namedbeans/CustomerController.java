@@ -10,6 +10,7 @@ import java.util.logging.Logger;
 @RequestScoped
 public class CustomerController {
 	private static final Logger logger = Logger.getLogger(CustomerController.class.getName());
+	// Inyectamos la instacion del CDI Bean Customer 
 	@Inject
 	private Customer customer;
 
