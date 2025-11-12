@@ -3,14 +3,26 @@
 	xmlns="https://jakarta.ee/xml/ns/jakartaee"
 	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
 	id="WebApp_ID" version="6.0">
-	<display-name>jakartaee-application-dev</display-name>
+	<display-name>jakartaee</display-name>
+	<data-source>
+		<name>java:global/JakartaDataSourceName</name>
+		<class-name>org.mariadb.jdbc.MariaDbDataSource</class-name>
+		<url>jdbc:mariadb://localhost:3306/jhib</url>
+	</data-source>
 	<servlet>
 		<description>Jakarta Faces Servlet Definition</description>
 		<servlet-name>JakartaServlet</servlet-name>
 		<servlet-class>jakarta.faces.webapp.FacesServlet</servlet-class>
 	</servlet>
+
 	<servlet-mapping>
 		<servlet-name>JakartaServlet</servlet-name>
-		 <url-pattern>*.xhtml</url-pattern>
+		<url-pattern>*.xhtml</url-pattern>
 	</servlet-mapping>
+
+	<!-- Nos permite evitar tener que colocar la extension .xhtml -->
+	<context-param>
+		<param-name>jakarta.faces.AUTOMATIC_EXTENSIONLESS_MAPPING</param-name>
+		<param-value>true</param-value>
+	</context-param>
 </web-app>
