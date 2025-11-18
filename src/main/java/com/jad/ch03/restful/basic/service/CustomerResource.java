@@ -34,12 +34,20 @@ public class CustomerResource {
 				 	"customer": 
 				 		{
 				           "id": 123,
-				           "firstName": "Joseph",
+				           "firstName": "Joseph Antone",
 				           "middleName": "William",
 				           "lastName": "Graystone"
 				         }
 				 }
 				""";
+	}
+	
+	
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	@Path("customername")
+	public String getCustomerName() {
+		return "Joseph Graystone";
 	}
 	
 	/**
