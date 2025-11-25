@@ -5,7 +5,7 @@
 	id="WebApp_ID" version="6.0">
 	<display-name>jakartaee</display-name>
 	<data-source>
-		<name>java:global/JakartaDataSourceName</name>
+		<name>java:global/JakartaDataSource</name>
 		<class-name>org.mariadb.jdbc.MariaDbDataSource</class-name>
 		<url>jdbc:mariadb://localhost:3306/jhib</url>
 	</data-source>

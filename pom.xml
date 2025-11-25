@@ -12,6 +12,13 @@
 	</properties>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>org.eclipse.parsson</groupId>
+			<artifactId>parsson</artifactId>
+			<version>1.1.7</version> <!-- Use the appropriate version -->
+		</dependency>
+
 		<dependency>
 			<groupId>org.glassfish.jersey.core</groupId>
 			<artifactId>jersey-client</artifactId>
