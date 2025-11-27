@@ -4,11 +4,13 @@
 	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
 	id="WebApp_ID" version="6.0">
 	<display-name>jakartaee</display-name>
+<!-- 	
 	<data-source>
 		<name>java:global/JakartaDataSource</name>
 		<class-name>org.mariadb.jdbc.MariaDbDataSource</class-name>
 		<url>jdbc:mariadb://localhost:3306/jhib</url>
 	</data-source>
+-->
 	<servlet>
 		<description>Jakarta Faces Servlet Definition</description>
 		<servlet-name>JakartaServlet</servlet-name>

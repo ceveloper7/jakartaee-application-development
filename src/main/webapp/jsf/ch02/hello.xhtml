@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="jakarta.faces.html" xmlns:f="jakarta.faces.core">	
+<h:head>
+	<h:title>Hello World Message</h:title>
+</h:head>
+<h:body>
+	<h:form>
+		<h:outputLabel for="input" value="Input" />
+		<h:inputText id="input" value="#{helloWorld.message.text}" />
+
+		<h:commandButton value="Submit" action="#{helloWorld.submit}">
+			<f:ajax execute="@form" render=":table" />
+		</h:commandButton>
+	</h:form>
+	<h:dataTable id="table" value="#{helloWorld.messages}" var="message">
+    <h:column>#{message.id}</h:column>
+    <h:column>#{message.text}</h:column>
+	</h:dataTable>
+</h:body>
+</html>
