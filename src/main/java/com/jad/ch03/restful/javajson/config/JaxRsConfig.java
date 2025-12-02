@@ -2,7 +2,7 @@ package com.jad.ch03.restful.javajson.config;
 
 import jakarta.ws.rs.ApplicationPath;
 
-@ApplicationPath("resources")
+@ApplicationPath("/resources")
 public class JaxRsConfig {
 
 }

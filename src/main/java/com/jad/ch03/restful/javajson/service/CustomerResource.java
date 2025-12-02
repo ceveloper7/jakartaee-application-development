@@ -16,7 +16,7 @@ import jakarta.ws.rs.core.MediaType;
 /**
  * Convert JSON data received to Java Object
  */
-@Path("client")
+@Path("/client")
 public class CustomerResource {
 	private static final Logger LOG = Logger.getLogger(CustomerResource.class.getName());
 
