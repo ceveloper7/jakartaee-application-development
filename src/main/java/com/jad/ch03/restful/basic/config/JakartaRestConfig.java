@@ -1,4 +1,4 @@
-package com.jad.ch03.restful.config;
+package com.jad.ch03.restful.basic.config;
 
 import jakarta.ws.rs.ApplicationPath;
 import jakarta.ws.rs.core.Application;
