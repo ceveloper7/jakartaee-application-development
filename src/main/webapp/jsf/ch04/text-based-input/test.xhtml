@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="jakarta.faces.html" xmlns:f="jakarta.faces.core" xmlns:c="jakarta.tags.core">	
+<h:head>
+	<h:title>All Text-based input Controls</h:title>
+</h:head>
+<h:body>
+	<h:form>
+		<h:inputText id="text" value="#{bean.text}" />
+		<h:inputSecret id="password" value="#{bean.password}"/>
+		<h:inputTextarea id="message" value="#{bean.message}" />
+		<h:inputHidden id="hidden" value="#{bean.hidden}" />
+		<h:commandButton id="submit" value="Submit" action="${bean.submit}" />
+	</h:form>
+	
+</h:body>
+</html>
