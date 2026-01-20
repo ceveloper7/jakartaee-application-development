@@ -6,3 +6,4 @@ import jakarta.ws.rs.ApplicationPath;
 public class JaxRsConfig {
 
 }
+	
