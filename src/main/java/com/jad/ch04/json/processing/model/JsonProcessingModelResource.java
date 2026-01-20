@@ -48,6 +48,10 @@ public class JsonProcessingModelResource {
 	/**
 	 * Reading and Parsing existing JSON Data
 	 * http://localhost:8080/jakartaee/resources/jsonpmodel/parse
+	 * 
+	 * 
+	 * 
+	 * 
 	 */
 	@Path("parse")
 	@POST
